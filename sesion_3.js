@@ -1,5 +1,5 @@
 
-//Creating object
+//Creating object ============================================================================================
 var iCar = {
   make:'BMW',
   model:'Mini',
@@ -11,7 +11,7 @@ var iCar = {
 };
 
 
-//Pring objects
+//Pring objects ============================================================================================
   console.log(iCar.make);
   console.log(iCar['make']);
   console.log(iCar.getBrand());
@@ -22,7 +22,7 @@ var iCar = {
   var selected_sheet=sheet1.getSheetByName("TaskMaster (session 3)");
   var sheet1_data_cells1 = selected_sheet.getDataRange().getValues();
  
-  //iterate row
+  //iterate row ============================================================================================
   for (var i =1 ; i < sheet1_data_cells1.length; i++) 
   {
     //row [],column []
@@ -33,7 +33,7 @@ var iCar = {
   }
 
 
-//This is a full blown function to read from sheet/table and send email
+//This is a full blown function to read from sheet/table and send email ==============================================
 function readfromsheets() {
   //Using SpreadsheetApp Class to access ActiveSpreadsheet function()
   var sheet1 = SpreadsheetApp.getActiveSpreadsheet();
